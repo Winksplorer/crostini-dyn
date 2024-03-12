@@ -7,4 +7,4 @@ Dynamic title bar colors for the Linux environment in ChromeOS
 
 How to install:
 
-`curl -L -s https://raw.githubusercontent.com/Winksplorer/crostini-dyn/main/install.sh`
+`curl -L -s https://raw.githubusercontent.com/Winksplorer/crostini-dyn/main/install.sh | bash`
