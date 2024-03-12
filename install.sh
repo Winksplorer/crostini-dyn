@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing crostini-dyn..."
-curl -L -s https://raw.githubusercontent.com/Winksplorer/crostini-dyn/main/crostini-dyn.sh | sudo tee /usr/bin/crostini-dyn 
+curl -L -s https://raw.githubusercontent.com/Winksplorer/crostini-dyn/main/crostini-dyn.sh >/dev/null | sudo tee /usr/bin/crostini-dyn 
 sudo chmod +x /usr/bin/crostini-dyn
 
 echo "Installing libnotify..."
