@@ -21,7 +21,7 @@ if [ $hour -ge 0 ] && [ $hour -lt 18 ]; then
         NID=0
         for i in {0..60}; do
             # This is actual crap... couldn't find a way to get changes to apply without restarting sommelier, this is the closest way.
-            NID=$(notify-send -u critical -r $NID "Linux environment (Crostini) will reboot in $((60-$i)) seconds, please save work to disk." -p)
+            NID=$(notify-send -u critical -r $NID "Linux environment will reboot in $((60-$i)) seconds, please save unfinished work." -p)
             sleep 1
         done
         systemctl --user daemon-reload
