@@ -32,7 +32,7 @@ if [ $hour -ge 0 ] && [ $hour -lt 18 ]; then
 
 elif [ $hour -ge 18 ] && [ $hour -lt 23 ]; then
     # Day
-    desired_content="[Service]\nEnvironment=\"SOMMELIER_FRAME_COLOR=282c34\""
+    desired_content="[Service]\nEnvironment=\"SOMMELIER_FRAME_COLOR=#282c34\""
 
     # Create a temporary file with the desired content, ensuring proper newline
     tempfile=$(mktemp)
