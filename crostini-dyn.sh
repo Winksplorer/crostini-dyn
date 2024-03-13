@@ -4,7 +4,7 @@
 hour=$(date +%H)
 
 # Perform different actions based on the current hour
-if [ $hour -ge 0 ] && [ $hour -lt 18 ]; then
+if [ $hour -ge 6 ] && [ $hour -lt 18 ]; then
     # Day
     desired_content="[Service]\nEnvironment=\"SOMMELIER_FRAME_COLOR=#f2f2f2\""
 
@@ -30,7 +30,7 @@ if [ $hour -ge 0 ] && [ $hour -lt 18 ]; then
     rm "$tempfile"
     exit 0
 
-elif [ $hour -ge 18 ] && [ $hour -lt 23 ]; then
+elif [[ $hour -ge 18 && $hour -le 23 ]] || [[ $hour -ge 0 && $hour -lt 6 ]]; then
     # Day
     desired_content="[Service]\nEnvironment=\"SOMMELIER_FRAME_COLOR=#282c34\""
 
